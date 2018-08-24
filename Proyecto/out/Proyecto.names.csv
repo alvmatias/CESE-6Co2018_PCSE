@@ -1,0 +1,342 @@
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00117c 000000b4 t uartProcessIRQ
+examples/PCSE/Proyecto/out/Proyecto.elf:10000afc 00000004 b rxIsrCallbackUART0
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b00 00000004 b txIsrCallbackUART0
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b04 00000004 b txIsrCallbackUART2
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b08 00000004 b txIsrCallbackUART3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007764 00000048 t lpcUarts
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b0c 00000004 b rxIsrCallbackUART2
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b10 00000004 b rxIsrCallbackUART3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000300 00000060 t getResponse
+examples/PCSE/Proyecto/out/Proyecto.elf:100008f8 0000004e b esp8266Wifi
+examples/PCSE/Proyecto/out/Proyecto.elf:10000948 00000005 b lcd
+examples/PCSE/Proyecto/out/Proyecto.elf:10000950 00000028 b stringToGPRS
+examples/PCSE/Proyecto/out/Proyecto.elf:10000978 00000014 b stringToLCD
+examples/PCSE/Proyecto/out/Proyecto.elf:1000098c 0000012c b stringToWIFI
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00094c 00000020 t oneWireSensorCheckCRC
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00096c 00000054 t oneWireSensorWriteBit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0009c0 0000001c t oneWireSensorWriteByte
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0009dc 00000050 t oneWireSensorReset
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000a2c 0000004c t oneWireSensorReadBit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000a78 0000001e t oneWireSensorReadByte
+examples/PCSE/Proyecto/out/Proyecto.elf:10000ab8 00000018 b oneWireSensor
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007578 00000030 t operation
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000b78 0000005c t getResponse
+examples/PCSE/Proyecto/out/Proyecto.elf:10000ad0 00000010 b gprs
+examples/PCSE/Proyecto/out/Proyecto.elf:10000004 00000004 d ClockSpeed
+examples/PCSE/Proyecto/out/Proyecto.elf:10000ae0 00000014 b result.10095
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000e34 0000002c t gpioObtainPinInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00148c 00000030 t i2cHardwareInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0014bc 0000003c t i2cHardwareWrite
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001524 00000002 t errorOcurred
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001528 00000002 t doNothing
+examples/PCSE/Proyecto/out/Proyecto.elf:10000008 00000040 d timer_dd
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001720 00000040 t Board_LED_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001760 0000003c t Board_TEC_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00179c 0000003c t Board_GPIO_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0017d8 00000038 t Board_SPI_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001810 00000024 t Board_I2C_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001834 00000030 t Board_ADC_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077ac 00000012 t GpioPorts
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077c8 00000008 t GpioButtons
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077d0 0000000c t GpioLeds
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b14 00000004 b heap_end.10251
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077dc 0000000c t InitClkStates
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077e8 00000098 t pinmuxing
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0019ac 0000002c t Chip_UART_GetIndex
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007880 00000008 t UART_BClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007888 00000008 t UART_PClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001b50 00000014 t Chip_ADC_GetClockIndex
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001b64 00000030 t getClkDiv
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001c28 000000a8 t pll_calc_divs
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001cd0 00000104 t pll_get_frac
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001dd4 00000048 t Chip_Clock_FindBaseClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002040 00000022 t Chip_Clock_GetDivRate
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b18 00000008 b audio_usb_pll_freq
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00789c 0000006c t periph_to_base
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007908 00000048 t InitClkStates
+examples/PCSE/Proyecto/out/Proyecto.elf:10000048 00000038 d i2c
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0026c0 00000014 t Chip_SSP_GetClockIndex
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0026d4 00000018 t Chip_SSP_GetPeriphClockIndex
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007950 00000010 t zeroes.6916
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007990 00000010 t blanks.6915
+examples/PCSE/Proyecto/out/Proyecto.elf:1a004db8 0000012c t quorem
+examples/PCSE/Proyecto/out/Proyecto.elf:100004ac 00000038 d lconv
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0079c0 0000000c t p05.5296
+examples/PCSE/Proyecto/out/Proyecto.elf:10000080 00000428 d impure_data
+examples/PCSE/Proyecto/out/Proyecto.elf:1a080000 a __top_MFlashA512
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac8 r __exidx_end
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac8 r _etext
+examples/PCSE/Proyecto/out/Proyecto.elf:20008000 a __top_RamAHB32
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac0 r __exidx_start
+examples/PCSE/Proyecto/out/Proyecto.elf:20010000 a __top_RamAHB_ETB16
+examples/PCSE/Proyecto/out/Proyecto.elf:10008000 a __top_RamLoc32
+examples/PCSE/Proyecto/out/Proyecto.elf:2000c000 a __top_RamAHB16
+examples/PCSE/Proyecto/out/Proyecto.elf:1008a000 a __top_RamLoc40
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac0 b __init_array_end
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac0 b __preinit_array_end
+examples/PCSE/Proyecto/out/Proyecto.elf:1b080000 a __top_MFlashB512
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac0 b __init_array_start
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007ac0 b __preinit_array_start
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001e68 0000001c T Chip_Clock_GetDividerSource
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002298 0000000e T Chip_I2CM_Xfer
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0072d8 00000012 T __aeabi_dcmple
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0037d0 000000ba T strcpy
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002c04 0000002e T __gnu_uldivmod_helper
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0015a8 00000040 T TIMER2_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001260 00000014 T uartRxRead
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007214 0000007a T __cmpdf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0014f8 0000000e T i2cInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00019c 00000002 W DebugMon_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W RIT_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000acc 00000078 T oneWireSensorFillScratchpad
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007214 0000007a T __eqdf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W ADCHS_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00305c 0000029c T __divdi3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000114 T __section_table_start
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W FLASH_EEPROM_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000d90 0000008c T int64ToString
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002b10 0000005a T __floatdidf
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W I2C0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001304 0000001c T uartReadByte
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00144c 0000003e T delayRead
+examples/PCSE/Proyecto/out/Proyecto.elf:10000af8 00000004 B callBackFuncParams
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000188 00000002 W HardFault_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002498 00000122 T handleMasterXferState
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000000 A __vectors_start__
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001c08 0000000c T Chip_ADC_SetResolution
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006354 00000002 T __malloc_unlock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00114c 00000030 T SysTick_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001a2c 00000040 T Chip_UART_SetBaud
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SDIO_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W ATIMER_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006d50 000000c6 T memmove
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a0 00000002 W PendSV_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000184 00000002 W NMI_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006358 0000004c T _Balloc
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000150 T __data_section_table_end
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W I2C1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W UART1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007204 0000008a T __gtdf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO5_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W CAN1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:53ff50c6 A __valid_user_code_checksum
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0072a0 00000010 T __aeabi_cdcmple
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W USB1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W I2S0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0015e8 00000040 T TIMER3_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0020cc 0000000c T Chip_Clock_GetBaseClocktHz
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000668 00000074 T lcdSendByte
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000178 0000000a T UART0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001c8 00000012 T bss_init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000754 00000014 T lcdWriteString
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0035b4 00000134 T memcpy
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007290 00000020 T __aeabi_cdrcmple
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SGPIO_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0038e8 000014cc T _svfprintf_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002aa0 00000022 T __floatsidf
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002644 00000030 T Chip_I2C_MasterStateHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00720c 00000082 T __ltdf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002ba4 T __aeabi_uldivmod
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b6c ? _noinit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00133c 00000018 T uartWriteString
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b68 00000004 B SystemCoreClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006944 0000005c T __fpclassifyd
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0019d8 00000054 T Chip_UART_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W ADC0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0079d0 000000c8 T __mprec_tens
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000194 00000002 W UsageFault_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002148 0000004c T Chip_Clock_GetRate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO6_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b28 00000004 B __malloc_top_pad
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b58 00000008 B tickCounter
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001934 0000006c T Board_SetupClocking
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002a80 0000001e T __aeabi_ui2d
+examples/PCSE/Proyecto/out/Proyecto.elf:1a005d90 00000008 T _localeconv_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0064d8 00000012 T __i2b
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002610 00000034 T Chip_I2C_SetMasterEventHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0027fc T __aeabi_drsub
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0018c4 00000020 T _sbrk_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077c4 00000004 T ExtRateIn
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W IntDefaultHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000300 T __CRP_WORD_END__
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000bd4 0000003c T gprsInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0072c4 00000012 T __aeabi_dcmplt
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b24 00000004 B __malloc_max_sbrked_mem
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002ac4 0000003a T __extendsfdf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002e8c 000001d0 T __aeabi_ddiv
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SSP0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002808 00000276 T __adddf3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001230 00000018 T uartRxReady
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000a98 00000034 T oneWireSensorInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002c38 00000254 T __aeabi_dmul
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0004bc 000001ac T wifiSendTCPIPData
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0002fc 00000004 T CRP_WORD
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006e18 000003ec T _realloc_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a003564 00000050 T __libc_init_array
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0032f8 0000026a T __udivdi3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007a98 00000028 T __mprec_bigtens
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000768 00000034 T lcdSetPosXY
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002a80 0000001e T __floatunsidf
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W ADC1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00676c 00000046 T __mcmp
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001888 0000003c T Board_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0027f8 00000002 T _init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000114 T __data_section_table
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W RTC_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b6c B _ebss
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00152c 0000003c T TIMER0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0010d0 0000007c T tickInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SPI_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0022a8 00000024 T Chip_I2CM_XferBlocking
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00643c 00000040 T __hi0bits
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0025e0 00000030 T Chip_I2C_SetClockRate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007314 0000004e T __fixdfsi
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W LCD_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001e1c 0000004c T Chip_Clock_EnableCrystal
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000ccc 000000a8 T gprsGetSignal
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002808 00000276 T __aeabi_dadd
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001ac 0000001a T data_init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00720c 00000082 T __ledf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006620 000000a0 T __pow5mult
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002b00 0000006a T __aeabi_ul2d
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001568 00000040 T TIMER1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0025bc 00000024 T Chip_I2C_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001354 0000000a T UART2_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001fd8 00000068 T Chip_Clock_GetMainPLLHz
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00762c 00000136 T gpioPinsInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001320 0000001a T uartWriteByte
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0026ec 00000012 T Chip_SSP_SetClockRate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000c10 000000bc T gprsSendSMS
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007300 00000012 T __aeabi_dcmpgt
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO2_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0062bc 00000092 T memchr
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006ba0 000001b0 T _free_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0020a8 00000024 T Chip_Clock_GetBaseClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0072ec 00000012 T __aeabi_dcmpge
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0006dc 00000054 T lcdInit
+examples/PCSE/Proyecto/out/Proyecto.elf:100008f8 B _bss
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001bd4 00000032 T Chip_ADC_SetSampleRate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002804 0000027a T __aeabi_dsub
+examples/PCSE/Proyecto/out/Proyecto.elf:100008f0 00000004 D __malloc_sbrk_base
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00142c 00000020 T delayInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002b00 0000006a T __floatundidf
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0066c0 000000aa T __lshift
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W I2S1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0069a0 00000104 T __ssprint_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002700 0000003e T Chip_SSP_SetBitRate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002324 00000002 T Chip_GPIO_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0077c0 00000004 T OscRateIn
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001288 0000007c T uartInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0064ec 00000134 T __multiply
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b6c ? _end_noinit
+examples/PCSE/Proyecto/out/Proyecto.elf:10008000 A _vStackTop
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b2c 00000028 B __malloc_current_mallinfo
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006888 000000ba T __d2b
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00136c 0000003e T delayInaccurate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SSP1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000178 T __bss_section_table_end
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002aa0 00000022 T __aeabi_i2d
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000e60 0000019c T gpioInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002c34 00000002 W __aeabi_ldiv0
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002e8c 000001d0 T __divdf3
+examples/PCSE/Proyecto/out/Proyecto.elf:100004e4 00000408 D __malloc_av_
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002c38 00000254 T __muldf3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W USB0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO3_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006350 00000002 T __malloc_lock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002674 00000018 T Chip_I2C_IsStateChanged
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SCT_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006aa4 0000005e T _calloc_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001e84 0000001c T Chip_Clock_GetDividerDivisor
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0002fc T __CRP_WORD_START__
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0036e8 0000009a T memset
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00018c 00000002 W MemManage_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0007b4 00000198 T main
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b20 00000004 B __malloc_max_total_mem
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W WDT_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000198 00000002 W SVC_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:10000000 00000004 D DWT_CTRL
+examples/PCSE/Proyecto/out/Proyecto.elf:1a004ee8 00000ea2 T _dtoa_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a005d98 00000524 T _malloc_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002b10 0000005a T __aeabi_l2d
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001248 00000018 T uartTxReady
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO7_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0020d8 0000003c T Chip_Clock_EnableOpts
+examples/PCSE/Proyecto/out/Proyecto.elf:1a006b04 0000009c T _malloc_trim_r
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001ea0 000000b8 T Chip_Clock_GetClockInputHz
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0022cc 00000058 T fpuInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001f58 00000080 T Chip_Clock_CalcMainPLLValue
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0018e4 0000001c T SystemInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W SPIFI_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0013f4 00000038 T delay
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W QEI_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000150 T __bss_section_table
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007214 0000007a T __nedf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000ffc 00000058 T gpioWrite
+examples/PCSE/Proyecto/out/Proyecto.elf:1a003784 0000004c T sprintf
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001b94 00000040 T Chip_ADC_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001900 00000034 T Board_SetupMuxing
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001a6c 000000e4 T Chip_UART_SetBaudFDR
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0010ac 0000000c T tickRead
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b60 00000008 B tickRateMS
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W ETH_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:10000af4 00000004 B tickHookFunction
+examples/PCSE/Proyecto/out/Proyecto.elf:100004a8 00000004 D _impure_ptr
+examples/PCSE/Proyecto/out/Proyecto.elf:10000000 ? _end_uninit_RESERVED
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001274 00000014 T uartTxWrite
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W CAN0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002194 00000104 T Chip_I2CM_XferHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:10000000 D _data
+examples/PCSE/Proyecto/out/Proyecto.elf:10000b6c B _pvHeapStart
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000178 T __section_table_end
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002740 00000038 T Chip_SSP_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00268c 00000034 T Chip_I2C_EventHandlerPolling
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GINT0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W DAC_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001508 0000001a T i2cWrite
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001864 00000024 T Board_Debug_Init
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0072b0 00000012 T __aeabi_dcmpeq
+examples/PCSE/Proyecto/out/Proyecto.elf:100008f4 D _edata
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002478 00000020 T Chip_I2C_EventHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W M0SUB_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002328 00000150 T Chip_SetupCoreClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO0_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:100008ec 00000004 D __malloc_trim_threshold
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000360 0000015c T wifiInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000000 00000114 T g_pfnVectors
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002778 00000080 T ResetISR
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001c14 00000014 T SystemCoreClockUpdate
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0067b4 000000d2 T __mdiff
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007314 0000004e T __aeabi_d2iz
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W DMA_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W EVRT_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0013ac 00000046 T delayInaccurateUs
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002c34 00000002 W __aeabi_idiv0
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000190 00000002 W BusFault_Handler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00388c 0000005c T strlen
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002114 00000034 T Chip_Clock_Enable
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0072a0 00000010 T __aeabi_cdcmpeq
+examples/PCSE/Proyecto/out/Proyecto.elf:1a007204 0000008a T __gedf2
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001360 0000000a T UART3_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W MCPWM_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002bd4 0000002e T __gnu_ldivmod_helper
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W M0APP_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001054 00000058 T gpioRead
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002ac4 0000003a T __aeabi_f2d
+examples/PCSE/Proyecto/out/Proyecto.elf:1a001628 000000f8 T boardInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000e1c 00000018 T intToString
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00079c 00000018 T lcdClearLine
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002804 0000027a T __subdf3
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GINT1_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a00647c 0000005a T __lo0bits
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002b6c T __aeabi_ldivmod
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0010b8 00000018 T tickPowerSet
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000b44 00000034 T oneWireSensorReadTempValue
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000730 00000022 T lcdWriteChar
+examples/PCSE/Proyecto/out/Proyecto.elf:1a002064 00000044 T Chip_Clock_SetBaseClock
+examples/PCSE/Proyecto/out/Proyecto.elf:1a000d74 0000001c T cyclesCounterInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0001a8 00000002 W GPIO4_IRQHandler
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0019a0 0000000c T Board_SystemInit
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0063b8 00000082 T __multadd
+examples/PCSE/Proyecto/out/Proyecto.elf:1a0063a4 00000012 T _Bfree

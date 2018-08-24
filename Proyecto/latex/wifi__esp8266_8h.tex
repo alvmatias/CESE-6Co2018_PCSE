@@ -1,0 +1,315 @@
+\hypertarget{wifi__esp8266_8h}{}\section{inc/wifi\+\_\+esp8266.h File Reference}
+\label{wifi__esp8266_8h}\index{inc/wifi\+\_\+esp8266.\+h@{inc/wifi\+\_\+esp8266.\+h}}
+
+
+Archivo de cabecera del archivo fuente wifi\+\_\+esp8266.\+c.  
+
+
+{\ttfamily \#include \char`\"{}sapi.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for wifi\+\_\+esp8266.\+h\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structesp8266__t}{esp8266\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Estructura de datos del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{wifi__esp8266_8h_ad37a804df2a1060b453ce07fe0ee3cbc}{AT}~\char`\"{}A\+T\textbackslash{}r\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando AT del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_afd49445ba1582d12dea7d59bc2d0b5ca}{A\+T\+R\+ST}~\char`\"{}AT+R\+S\+T\textbackslash{}r\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando AT del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_afed293aa0c6345dfe64a4316f5f39d78}{A\+T\+C\+W\+J\+AP}~\char`\"{}AT+C\+W\+J\+AP=\textbackslash{}\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+W\+J\+AP del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_a86a62ab9018632ad8ceb33b56f2b2ea0}{A\+T\+C\+W\+M\+O\+DE}~\char`\"{}AT+C\+W\+M\+O\+DE=\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+W\+M\+O\+DE del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_a61a473a9c84e4af1b2681f88bd448f58}{A\+T\+C\+I\+P\+M\+UX}~\char`\"{}AT+C\+I\+P\+M\+UX=\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+I\+P\+M\+UX del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_a0e92f4692c7a61ef40e10fd782a5a292}{A\+T\+C\+I\+P\+S\+T\+A\+RT}~\char`\"{}AT+C\+I\+P\+S\+T\+A\+RT=\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+I\+P\+S\+T\+A\+RT del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_a6be565f640c8fd7a4af815546fa10f7e}{A\+T\+C\+I\+P\+C\+L\+O\+SE}~\char`\"{}AT+C\+I\+P\+C\+L\+O\+SE\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+I\+P\+C\+L\+O\+SE del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_a06c6e854a4e9a30b0f7a92ee1afabaec}{A\+T\+C\+I\+P\+S\+E\+ND}~\char`\"{}AT+C\+I\+P\+S\+E\+ND=\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+I\+P\+S\+E\+ND del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_a2603a969a84c0f6c2e95217720687e04}{E\+S\+P8266\+\_\+\+D\+E\+L\+AY}~5000\hypertarget{wifi__esp8266_8h_a2603a969a84c0f6c2e95217720687e04}{}\label{wifi__esp8266_8h_a2603a969a84c0f6c2e95217720687e04}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de tiempo en milisegundos que se espera la respuesta por parte del modulo Wifi. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_aa3bfe9f30edbb5fac0a774a810c45bd4}{W\+I\+F\+I\+\_\+\+N\+A\+M\+E\+\_\+\+L\+E\+N\+G\+TH}~30\hypertarget{wifi__esp8266_8h_aa3bfe9f30edbb5fac0a774a810c45bd4}{}\label{wifi__esp8266_8h_aa3bfe9f30edbb5fac0a774a810c45bd4}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de caracteres posibles para el nombre de red a la cual conectar el modulo Wifi. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_ac7c70f898113fc416cd50088eb8def4b}{W\+I\+F\+I\+\_\+\+P\+A\+S\+S\+W\+O\+R\+D\+\_\+\+L\+E\+N\+G\+TH}~30\hypertarget{wifi__esp8266_8h_ac7c70f898113fc416cd50088eb8def4b}{}\label{wifi__esp8266_8h_ac7c70f898113fc416cd50088eb8def4b}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de caracteres posibles para la contraseña de red a la cual conectar el modulo Wifi. \end{DoxyCompactList}\item 
+\#define \hyperlink{wifi__esp8266_8h_ad15d1691bb7dd8541f8f14974e5a94c6}{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+T\+O\+\_\+\+W\+A\+I\+T\+\_\+\+L\+E\+N\+G\+TH}~15\hypertarget{wifi__esp8266_8h_ad15d1691bb7dd8541f8f14974e5a94c6}{}\label{wifi__esp8266_8h_ad15d1691bb7dd8541f8f14974e5a94c6}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de caracteres de la respuesta que se espera por parte del modulo Wifi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049}{esp8266\+Error\+\_\+t} \{ \hyperlink{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049ae41acf46688758cea459366e17c534de}{E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG} = 0, 
+\hyperlink{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049a8fe9147cd6079376a09aed3ed606d241}{E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG} = 1
+ \}\begin{DoxyCompactList}\small\item\em Definicion de los estados posibles de funcionamiento del modulo Wifi E\+S\+P8266. \end{DoxyCompactList}
+\item 
+enum \hyperlink{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345e}{wifi\+Mode\+\_\+t} \{ \hyperlink{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345eabd03eae7aff57049c70079dc7877de47}{S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE} = 1, 
+\hyperlink{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345ea5d91f8651560e2e6565fb45773275d39}{A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE} = 2
+ \}\begin{DoxyCompactList}\small\item\em Definicion de los modos de Wifi posibles para el modulo Wifi E\+S\+P8266. \end{DoxyCompactList}
+\item 
+enum \hyperlink{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbc}{T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t} \{ \hyperlink{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbca43005cd0efa3b1e1373be596db0ee869}{S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON} = 0, 
+\hyperlink{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbca5e250b52a53a1503c6436ac616749e1c}{M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON} = 1
+ \}\begin{DoxyCompactList}\small\item\em Definicion de la cantidad de conexiones T\+C\+P/\+U\+DP simultaneas que puede soportar el modulo Wifi E\+S\+P8266. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049}{esp8266\+Error\+\_\+t} \hyperlink{wifi__esp8266_8h_a1866eb78b624cd419e95a98c72af6fcc}{wifi\+Init} (uart\+Map\+\_\+t wifi\+Uart, \hyperlink{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345e}{wifi\+Mode\+\_\+t} wifi\+Mode, \hyperlink{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbc}{T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t} T\+C\+P\+U\+D\+P\+Connection\+Type, char $\ast$wifi\+Name, char $\ast$wifi\+Password)
+\begin{DoxyCompactList}\small\item\em Inicializacion y configuracion del modulo Wifi. \end{DoxyCompactList}\item 
+\hyperlink{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049}{esp8266\+Error\+\_\+t} \hyperlink{wifi__esp8266_8h_abd77ae1924a0863d70f74533c9c5c378}{wifi\+Send\+T\+C\+P\+I\+P\+Data} (char $\ast$data, char $\ast$transport\+Layer, char $\ast$T\+C\+P\+U\+D\+P\+Ip, int32\+\_\+t T\+C\+P\+U\+D\+P\+Port, uint8\+\_\+t T\+C\+P\+U\+D\+P\+Connection\+Id)
+\begin{DoxyCompactList}\small\item\em Envio de data via T\+C\+P/\+U\+DP. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{wifi__esp8266_8h_afc9e038ef8530beaea53d093326cd397}{get\+Wifi\+Name} ()
+\begin{DoxyCompactList}\small\item\em Obtencion del nombre de la red a la cual se conecta el modulo Wifi. \end{DoxyCompactList}\item 
+char $\ast$ \hyperlink{wifi__esp8266_8h_ae3f93df861bb8c73a4d3499e8df8c2db}{get\+Wifi\+Password} ()
+\begin{DoxyCompactList}\small\item\em Obtencion de la contraseña de la red a la cual se conecta el modulo Wifi. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Archivo de cabecera del archivo fuente wifi\+\_\+esp8266.\+c. 
+
+Manejo de Wifi E\+S\+P8266 \begin{DoxyNote}{Note}
+Copyright 2018 -\/ Ing Matias Alvarez. 
+\end{DoxyNote}
+
+
+\subsection{Macro Definition Documentation}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!AT@{AT}}
+\index{AT@{AT}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{AT}{AT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define AT~\char`\"{}A\+T\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{wifi__esp8266_8h_ad37a804df2a1060b453ce07fe0ee3cbc}{}\label{wifi__esp8266_8h_ad37a804df2a1060b453ce07fe0ee3cbc}
+
+
+Comando AT del modulo Wifi E\+S\+P8266. 
+
+Utilizado para ver que el modulo este correctamente funcionando. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+C\+I\+P\+C\+L\+O\+SE@{A\+T\+C\+I\+P\+C\+L\+O\+SE}}
+\index{A\+T\+C\+I\+P\+C\+L\+O\+SE@{A\+T\+C\+I\+P\+C\+L\+O\+SE}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+I\+P\+C\+L\+O\+SE}{ATCIPCLOSE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+I\+P\+C\+L\+O\+SE~\char`\"{}AT+C\+I\+P\+C\+L\+O\+SE\char`\"{}}\hypertarget{wifi__esp8266_8h_a6be565f640c8fd7a4af815546fa10f7e}{}\label{wifi__esp8266_8h_a6be565f640c8fd7a4af815546fa10f7e}
+
+
+Comando A\+T+\+C\+I\+P\+C\+L\+O\+SE del modulo Wifi E\+S\+P8266. 
+
+Utilizado para finalizar una conexion T\+C\+P/\+U\+DP. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+C\+I\+P\+M\+UX@{A\+T\+C\+I\+P\+M\+UX}}
+\index{A\+T\+C\+I\+P\+M\+UX@{A\+T\+C\+I\+P\+M\+UX}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+I\+P\+M\+UX}{ATCIPMUX}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+I\+P\+M\+UX~\char`\"{}AT+C\+I\+P\+M\+UX=\char`\"{}}\hypertarget{wifi__esp8266_8h_a61a473a9c84e4af1b2681f88bd448f58}{}\label{wifi__esp8266_8h_a61a473a9c84e4af1b2681f88bd448f58}
+
+
+Comando A\+T+\+C\+I\+P\+M\+UX del modulo Wifi E\+S\+P8266. 
+
+Utilizado para establecer cuantas conexion T\+C\+P/\+U\+DP puede soportar al mismo tiempo. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+C\+I\+P\+S\+E\+ND@{A\+T\+C\+I\+P\+S\+E\+ND}}
+\index{A\+T\+C\+I\+P\+S\+E\+ND@{A\+T\+C\+I\+P\+S\+E\+ND}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+I\+P\+S\+E\+ND}{ATCIPSEND}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+I\+P\+S\+E\+ND~\char`\"{}AT+C\+I\+P\+S\+E\+ND=\char`\"{}}\hypertarget{wifi__esp8266_8h_a06c6e854a4e9a30b0f7a92ee1afabaec}{}\label{wifi__esp8266_8h_a06c6e854a4e9a30b0f7a92ee1afabaec}
+
+
+Comando A\+T+\+C\+I\+P\+S\+E\+ND del modulo Wifi E\+S\+P8266. 
+
+Utilizado para enviar data via T\+C\+P/\+U\+DP. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+C\+I\+P\+S\+T\+A\+RT@{A\+T\+C\+I\+P\+S\+T\+A\+RT}}
+\index{A\+T\+C\+I\+P\+S\+T\+A\+RT@{A\+T\+C\+I\+P\+S\+T\+A\+RT}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+I\+P\+S\+T\+A\+RT}{ATCIPSTART}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+I\+P\+S\+T\+A\+RT~\char`\"{}AT+C\+I\+P\+S\+T\+A\+RT=\char`\"{}}\hypertarget{wifi__esp8266_8h_a0e92f4692c7a61ef40e10fd782a5a292}{}\label{wifi__esp8266_8h_a0e92f4692c7a61ef40e10fd782a5a292}
+
+
+Comando A\+T+\+C\+I\+P\+S\+T\+A\+RT del modulo Wifi E\+S\+P8266. 
+
+Utilizado para iniciar una conexion T\+C\+P/\+U\+DP con el servidor especificado. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+C\+W\+J\+AP@{A\+T\+C\+W\+J\+AP}}
+\index{A\+T\+C\+W\+J\+AP@{A\+T\+C\+W\+J\+AP}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+W\+J\+AP}{ATCWJAP}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+W\+J\+AP~\char`\"{}AT+C\+W\+J\+AP=\textbackslash{}\char`\"{}\char`\"{}}\hypertarget{wifi__esp8266_8h_afed293aa0c6345dfe64a4316f5f39d78}{}\label{wifi__esp8266_8h_afed293aa0c6345dfe64a4316f5f39d78}
+
+
+Comando A\+T+\+C\+W\+J\+AP del modulo Wifi E\+S\+P8266. 
+
+Utilizado para conectar el modulo a la red especificada. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}W\+I\+FI C\+O\+N\+N\+E\+C\+T\+ED\textquotesingle{} y \textquotesingle{}W\+I\+FI G\+OT IP\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+C\+W\+M\+O\+DE@{A\+T\+C\+W\+M\+O\+DE}}
+\index{A\+T\+C\+W\+M\+O\+DE@{A\+T\+C\+W\+M\+O\+DE}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+W\+M\+O\+DE}{ATCWMODE}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+W\+M\+O\+DE~\char`\"{}AT+C\+W\+M\+O\+DE=\char`\"{}}\hypertarget{wifi__esp8266_8h_a86a62ab9018632ad8ceb33b56f2b2ea0}{}\label{wifi__esp8266_8h_a86a62ab9018632ad8ceb33b56f2b2ea0}
+
+
+Comando A\+T+\+C\+W\+M\+O\+DE del modulo Wifi E\+S\+P8266. 
+
+Utilizado para establecer el modo de wifi(\+S\+T\+A\+T\+I\+O\+N o S\+O\+F\+T A\+P). \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+T\+R\+ST@{A\+T\+R\+ST}}
+\index{A\+T\+R\+ST@{A\+T\+R\+ST}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+R\+ST}{ATRST}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+R\+ST~\char`\"{}AT+R\+S\+T\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{wifi__esp8266_8h_afd49445ba1582d12dea7d59bc2d0b5ca}{}\label{wifi__esp8266_8h_afd49445ba1582d12dea7d59bc2d0b5ca}
+
+
+Comando AT del modulo Wifi E\+S\+P8266. 
+
+Utilizado para resetear el modulo. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!esp8266\+Error\+\_\+t@{esp8266\+Error\+\_\+t}}
+\index{esp8266\+Error\+\_\+t@{esp8266\+Error\+\_\+t}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{esp8266\+Error\+\_\+t}{esp8266Error_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf esp8266\+Error\+\_\+t}}\hypertarget{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049}{}\label{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049}
+
+
+Definicion de los estados posibles de funcionamiento del modulo Wifi E\+S\+P8266. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG@{E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG@{E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG}}\item[{\em 
+E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG\hypertarget{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049ae41acf46688758cea459366e17c534de}{}\label{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049ae41acf46688758cea459366e17c534de}
+}]Modulo Wifi E\+S\+P8266 No Funcionando \index{E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG@{E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG@{E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG}}\item[{\em 
+E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG\hypertarget{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049a8fe9147cd6079376a09aed3ed606d241}{}\label{wifi__esp8266_8h_ac089dafdc11823be65fb672a814e4049a8fe9147cd6079376a09aed3ed606d241}
+}]Modulo Wifi E\+S\+P8266 Funcionando \end{description}
+\end{Desc}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t@{T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t}}
+\index{T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t@{T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t}{TCPUDPConnectionType_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t}}\hypertarget{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbc}{}\label{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbc}
+
+
+Definicion de la cantidad de conexiones T\+C\+P/\+U\+DP simultaneas que puede soportar el modulo Wifi E\+S\+P8266. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON@{S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON@{S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}}\item[{\em 
+S\+I\+N\+G\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON\hypertarget{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbca43005cd0efa3b1e1373be596db0ee869}{}\label{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbca43005cd0efa3b1e1373be596db0ee869}
+}]Modulo Wifi con 1 sola conexion \index{M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON@{M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON@{M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON}}\item[{\em 
+M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON\hypertarget{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbca5e250b52a53a1503c6436ac616749e1c}{}\label{wifi__esp8266_8h_a0a56b4d7d7b4327ac6f171aa63c6bcbca5e250b52a53a1503c6436ac616749e1c}
+}]Modulo Wifi con hasta 4 conexiones \end{description}
+\end{Desc}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!wifi\+Mode\+\_\+t@{wifi\+Mode\+\_\+t}}
+\index{wifi\+Mode\+\_\+t@{wifi\+Mode\+\_\+t}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{wifi\+Mode\+\_\+t}{wifiMode_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf wifi\+Mode\+\_\+t}}\hypertarget{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345e}{}\label{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345e}
+
+
+Definicion de los modos de Wifi posibles para el modulo Wifi E\+S\+P8266. 
+
+\begin{DoxyNote}{Note}
+Se pueden usar en conjunto. Por ejemplo \+: S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE $\vert$ A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE. 
+\end{DoxyNote}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE@{S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE}}\item[{\em 
+S\+T\+A\+T\+I\+O\+N\+\_\+\+M\+O\+DE\hypertarget{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345eabd03eae7aff57049c70079dc7877de47}{}\label{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345eabd03eae7aff57049c70079dc7877de47}
+}]Modulo Wifi en modo S\+T\+A\+T\+I\+ON \index{A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE@{A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE@{A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE}}\item[{\em 
+A\+C\+C\+E\+S\+S\+\_\+\+P\+O\+I\+N\+T\+\_\+\+M\+O\+DE\hypertarget{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345ea5d91f8651560e2e6565fb45773275d39}{}\label{wifi__esp8266_8h_a644a98aa74e43b8bdd1504310cee345ea5d91f8651560e2e6565fb45773275d39}
+}]Modulo Wifi en modo S\+O\+FT AP \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!get\+Wifi\+Name@{get\+Wifi\+Name}}
+\index{get\+Wifi\+Name@{get\+Wifi\+Name}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{get\+Wifi\+Name()}{getWifiName()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ get\+Wifi\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{wifi__esp8266_8h_afc9e038ef8530beaea53d093326cd397}{}\label{wifi__esp8266_8h_afc9e038ef8530beaea53d093326cd397}
+
+
+Obtencion del nombre de la red a la cual se conecta el modulo Wifi. 
+
+\begin{DoxyReturn}{Returns}
+El nombre de la red. 
+\end{DoxyReturn}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!get\+Wifi\+Password@{get\+Wifi\+Password}}
+\index{get\+Wifi\+Password@{get\+Wifi\+Password}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{get\+Wifi\+Password()}{getWifiPassword()}}]{\setlength{\rightskip}{0pt plus 5cm}char $\ast$ get\+Wifi\+Password (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{wifi__esp8266_8h_ae3f93df861bb8c73a4d3499e8df8c2db}{}\label{wifi__esp8266_8h_ae3f93df861bb8c73a4d3499e8df8c2db}
+
+
+Obtencion de la contraseña de la red a la cual se conecta el modulo Wifi. 
+
+\begin{DoxyReturn}{Returns}
+La contraseña de la red. 
+\end{DoxyReturn}
+\index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!wifi\+Init@{wifi\+Init}}
+\index{wifi\+Init@{wifi\+Init}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{wifi\+Init(uart\+Map\+\_\+t wifi\+Uart, wifi\+Mode\+\_\+t wifi\+Mode, T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t T\+C\+P\+U\+D\+P\+Connection\+Type, char $\ast$wifi\+Name, char $\ast$wifi\+Password)}{wifiInit(uartMap_t wifiUart, wifiMode_t wifiMode, TCPUDPConnectionType_t TCPUDPConnectionType, char *wifiName, char *wifiPassword)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf esp8266\+Error\+\_\+t} wifi\+Init (
+\begin{DoxyParamCaption}
+\item[{uart\+Map\+\_\+t}]{wifi\+Uart, }
+\item[{{\bf wifi\+Mode\+\_\+t}}]{wifi\+Mode, }
+\item[{{\bf T\+C\+P\+U\+D\+P\+Connection\+Type\+\_\+t}}]{T\+C\+P\+U\+D\+P\+Connection\+Type, }
+\item[{char $\ast$}]{wifi\+Name, }
+\item[{char $\ast$}]{wifi\+Password}
+\end{DoxyParamCaption}
+)}\hypertarget{wifi__esp8266_8h_a1866eb78b624cd419e95a98c72af6fcc}{}\label{wifi__esp8266_8h_a1866eb78b624cd419e95a98c72af6fcc}
+
+
+Inicializacion y configuracion del modulo Wifi. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em wifi\+Uart} & \+: U\+A\+RT a utilizar por el modulo Wifi. \\
+\hline
+{\em wifi\+Mode} & \+: Modo a utilizar por el modulo Wifi. \\
+\hline
+{\em T\+C\+P\+U\+D\+P\+Connection\+Type} & \+: Tipo de conexion a utilizar por el modulo Wifi. \\
+\hline
+{\em wifi\+Name} & \+: Nombre de la red a la cual se conecta el modulo Wifi. \\
+\hline
+{\em wifi\+Password} & \+: Contraseña de la red a la cual se conecta el modulo Wifi. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG Si la inicializacion NO fue correcta, E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG caso contrario. 
+\end{DoxyReturn}
+error \+: Estado de funcionamiento del modulo Wifi \index{wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}!wifi\+Send\+T\+C\+P\+I\+P\+Data@{wifi\+Send\+T\+C\+P\+I\+P\+Data}}
+\index{wifi\+Send\+T\+C\+P\+I\+P\+Data@{wifi\+Send\+T\+C\+P\+I\+P\+Data}!wifi\+\_\+esp8266.\+h@{wifi\+\_\+esp8266.\+h}}
+\subsubsection[{\texorpdfstring{wifi\+Send\+T\+C\+P\+I\+P\+Data(char $\ast$data, char $\ast$transport\+Layer, char $\ast$\+T\+C\+P\+U\+D\+P\+Ip, int32\+\_\+t T\+C\+P\+U\+D\+P\+Port, uint8\+\_\+t T\+C\+P\+U\+D\+P\+Connection\+Id)}{wifiSendTCPIPData(char *data, char *transportLayer, char *TCPUDPIp, int32_t TCPUDPPort, uint8_t TCPUDPConnectionId)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf esp8266\+Error\+\_\+t} wifi\+Send\+T\+C\+P\+I\+P\+Data (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{data, }
+\item[{char $\ast$}]{transport\+Layer, }
+\item[{char $\ast$}]{T\+C\+P\+U\+D\+P\+Ip, }
+\item[{int32\+\_\+t}]{T\+C\+P\+U\+D\+P\+Port, }
+\item[{uint8\+\_\+t}]{T\+C\+P\+U\+D\+P\+Connection\+Id}
+\end{DoxyParamCaption}
+)}\hypertarget{wifi__esp8266_8h_abd77ae1924a0863d70f74533c9c5c378}{}\label{wifi__esp8266_8h_abd77ae1924a0863d70f74533c9c5c378}
+
+
+Envio de data via T\+C\+P/\+U\+DP. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em data} & \+: Puntero al buffer que almacena los datos a enviar. \\
+\hline
+{\em transport\+Layer} & \+: Capa de transporte a utilizar para enviar los datos. \\
+\hline
+{\em T\+C\+P\+U\+D\+P\+Ip} & \+: IP del servidor al cual enviar los datos. \\
+\hline
+{\em T\+C\+P\+U\+D\+P\+Port} & \+: Puerto T\+C\+P/\+U\+DP del servidor con el cual establecer la conexion. \\
+\hline
+{\em T\+C\+P\+U\+D\+P\+Connection\+Id} & \+: Interfaz T\+C\+P/\+U\+DP a utilizar(0 -\/ 4). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+E\+S\+P8266\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG Si la inicializacion NO fue correcta, E\+S\+P8266\+\_\+\+W\+O\+R\+K\+I\+NG caso contrario. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+La interfaz T\+C\+P/\+U\+DP puede ser distinto de 0 solo si T\+C\+P\+U\+D\+P\+Connection\+Type fue seteado como M\+U\+L\+T\+I\+P\+L\+E\+\_\+\+C\+O\+N\+N\+E\+C\+T\+I\+ON. 
+\end{DoxyNote}
+error \+: Estado de funcionamiento del modulo Wifi 

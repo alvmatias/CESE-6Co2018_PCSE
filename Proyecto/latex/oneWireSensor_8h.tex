@@ -1,0 +1,307 @@
+\hypertarget{oneWireSensor_8h}{}\section{inc/one\+Wire\+Sensor.h File Reference}
+\label{oneWireSensor_8h}\index{inc/one\+Wire\+Sensor.\+h@{inc/one\+Wire\+Sensor.\+h}}
+
+
+Archivo de cabecera del archivo fuente one\+Wire\+Sensor.\+c.  
+
+
+{\ttfamily \#include \char`\"{}sapi.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}stdint.\+h\char`\"{}}\\*
+Include dependency graph for one\+Wire\+Sensor.\+h\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structoneWireSensorOperation__t}{one\+Wire\+Sensor\+Operation\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Estructura de datos relacionada con la operacion propiamente dicha del sensor One\+Wire. \end{DoxyCompactList}\item 
+struct \hyperlink{structoneWireSensor__t}{one\+Wire\+Sensor\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Estructura de datos del sensor One\+Wire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{oneWireSensor_8h_a3c3ec46347886e5516c7a458b26ef5e5}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+L\+E\+N\+G\+TH}~9\hypertarget{oneWireSensor_8h_a3c3ec46347886e5516c7a458b26ef5e5}{}\label{oneWireSensor_8h_a3c3ec46347886e5516c7a458b26ef5e5}
+
+\begin{DoxyCompactList}\small\item\em Tamaño del S\+C\+R\+A\+T\+C\+H\+P\+AD del sensor One\+Wire. \end{DoxyCompactList}\item 
+\#define \hyperlink{oneWireSensor_8h_a7d4a1875576135ebdd354a816679d45c}{B\+I\+T\+\_\+\+M\+A\+SK}~0x01\hypertarget{oneWireSensor_8h_a7d4a1875576135ebdd354a816679d45c}{}\label{oneWireSensor_8h_a7d4a1875576135ebdd354a816679d45c}
+
+\begin{DoxyCompactList}\small\item\em Mascara de un bit. \end{DoxyCompactList}\item 
+\#define \hyperlink{oneWireSensor_8h_a4193f399cfecf510bd0f451145d5c73e}{C\+R\+C\+\_\+\+P\+O\+L\+Y\+N\+O\+M\+I\+AL}~0x8C\hypertarget{oneWireSensor_8h_a4193f399cfecf510bd0f451145d5c73e}{}\label{oneWireSensor_8h_a4193f399cfecf510bd0f451145d5c73e}
+
+\begin{DoxyCompactList}\small\item\em Polinomio utilizado para calcular el C\+RC del sensor One\+Wire. \end{DoxyCompactList}\item 
+\#define \hyperlink{oneWireSensor_8h_a59c8511efd0ab0f86d79ef3593e88c1b}{M\+A\+X\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+NS}~4\hypertarget{oneWireSensor_8h_a59c8511efd0ab0f86d79ef3593e88c1b}{}\label{oneWireSensor_8h_a59c8511efd0ab0f86d79ef3593e88c1b}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de resoluciones soportadas por el sensor One\+Wire. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2a}{one\+Wire\+Sensor\+Error\+\_\+t} \{ \hyperlink{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2aa19b4d4ca303b2e66472289559a8c39db}{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG} = 0, 
+\hyperlink{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2aac68e5153b726f369607ba612813fb2b8}{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG} = 1
+ \}\begin{DoxyCompactList}\small\item\em Estado funcionamiento del sensor One\+Wire. \end{DoxyCompactList}
+\item 
+enum \hyperlink{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9b}{one\+Wire\+Sensor\+Command\+\_\+t} \{ \hyperlink{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9bab2b9438ba5166fb8ac017bdbb55d9646}{C\+O\+N\+V\+E\+R\+T\+\_\+T} = 0x44, 
+\hyperlink{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9ba7aadade4e18aa3fa43671e04a0338d01}{S\+K\+I\+P\+\_\+\+R\+OM} = 0x\+CC, 
+\hyperlink{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9ba3b66d5a861d08cb8b32618183ca1d0a3}{R\+E\+A\+D\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD} = 0x\+BE
+ \}\begin{DoxyCompactList}\small\item\em Comandos para el sensor One\+Wire ds18b20. \end{DoxyCompactList}
+\item 
+enum \hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62}{scratchpad\+Byte\+\_\+t} \{ \\*
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62afa2f5ed63d4b3ce65771b65e2d668a13}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+SB} = 0, 
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a25ff9baae992188b61df23e661e9739e}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+SB} = 1, 
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a8de85cf12df772e277932ee9e7ecae9c}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+H\+\_\+\+R\+E\+G\+I\+S\+T\+ER} = 2, 
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62ac6b78c505b983fa70dbd6ebd36e7c98b}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+L\+\_\+\+R\+E\+G\+I\+S\+T\+ER} = 3, 
+\\*
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a0107ed61deeb989b164a5c4ec89ecb08}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+S\+T\+ER} = 4, 
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a2dc23a13aeee28b79754a398f502f218}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+1} = 5, 
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a7d43f265fefb3a67b383673d3cf231fb}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+2} = 6, 
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62aa8c21eed5709d0366cc7a6a5d46688e5}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+3} = 7, 
+\\*
+\hyperlink{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a6941e09b5df1d1074ec4d92032bf7c76}{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+R\+C\+\_\+\+B\+Y\+TE} = 8
+ \}\begin{DoxyCompactList}\small\item\em Descripcion de cada byte del S\+C\+R\+A\+T\+C\+H\+P\+AD. \end{DoxyCompactList}
+\item 
+enum \hyperlink{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98}{one\+Wire\+Sensor\+Resolution\+\_\+t} \{ \hyperlink{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98a9a474dd8c718b426641a8b471d640cdc}{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} = 9, 
+\hyperlink{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98aa7508704967fb24d5a63018c6f2ae85a}{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} = 10, 
+\hyperlink{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98a576d63794732dd5c03a2ad31033775db}{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} = 11, 
+\hyperlink{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98aba59e167509e30c6015b0143b6aab714}{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON} = 12
+ \}\begin{DoxyCompactList}\small\item\em Resoluciones posbiles en bits del sensor One\+Wire. \end{DoxyCompactList}
+\item 
+enum \hyperlink{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9}{one\+Wire\+Sensor\+Resolution\+Step\+\_\+t} \{ \hyperlink{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9a3c3e7d899a9b25096551efa1d62d126e}{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP} = 5, 
+\hyperlink{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9aa56e4c78ccd19c77711a92ccf159fde1}{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP} = 25, 
+\hyperlink{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9ad1f19f1b7197d2fcd39f074b5c2f0ba7}{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP} = 125, 
+\hyperlink{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9a14d23f55d09576c038831b6f61753d7e}{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP} = 625
+ \}\begin{DoxyCompactList}\small\item\em Resoluciones posbiles en grados centigrados(°C) del sensor One\+Wire. \end{DoxyCompactList}
+\item 
+enum \hyperlink{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230}{one\+Wire\+Sensor\+Delay\+\_\+t} \{ \hyperlink{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230aebaf4bef2614cb3a0007f055a670a366}{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY} = 94, 
+\hyperlink{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a94cd65c1d9a427e5dedda1516e8d5c94}{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY} = 188, 
+\hyperlink{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a452a30a49b4cf9287b39b11dde1e9e66}{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY} = 375, 
+\hyperlink{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a635bd8fc117a8d7b536c97a83e06f6ed}{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY} = 750
+ \}\begin{DoxyCompactList}\small\item\em Delay de conversion de temperatura asociado a cada resolucion posible del sensor One\+Wire. \end{DoxyCompactList}
+\item 
+enum \hyperlink{oneWireSensor_8h_a27df67930140466ba44e0a26af70947e}{one\+Wire\+Sensor\+Mask\+\_\+t} \{ \hyperlink{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea37466bd3c21416cc7caacd4dd604ebbf}{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK} = 0x08, 
+\hyperlink{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea93208b33345d305bb5bf718e20efc99b}{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK} = 0x0a, 
+\hyperlink{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea40b9016c0dbb27cd1eb077a34371be68}{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK} = 0x0e, 
+\hyperlink{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea06cab04f28a2f0bdafbccd3913c175b5}{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK} = 0x0f
+ \}\begin{DoxyCompactList}\small\item\em Mascara utilizada para calcular la temperatura asociada a cada resolucion posible del sensor One\+Wire. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{oneWireSensor_8h_a9be90d394a6b5ea24d36dc6172d1b23b}{one\+Wire\+Sensor\+Init} (\hyperlink{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98}{one\+Wire\+Sensor\+Resolution\+\_\+t} resolution, gpio\+Map\+\_\+t gpio)
+\begin{DoxyCompactList}\small\item\em Inicializacion de la estructura de datos del sensor one\+Wire. \end{DoxyCompactList}\item 
+\hyperlink{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2a}{one\+Wire\+Sensor\+Error\+\_\+t} \hyperlink{oneWireSensor_8h_ae05cc03813f40654ef0cfb28e493b512}{one\+Wire\+Sensor\+Fill\+Scratchpad} ()
+\begin{DoxyCompactList}\small\item\em Carga del S\+C\+R\+A\+T\+C\+H\+P\+AD asociado al sensor a partir de los datos recibidos por parte del sensor. \end{DoxyCompactList}\item 
+float \hyperlink{oneWireSensor_8h_a47997a927d9398575c9608e23de1c088}{one\+Wire\+Sensor\+Read\+Temp\+Value} ()
+\begin{DoxyCompactList}\small\item\em Calculo y lectura de la temperatura del scratchpad. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Archivo de cabecera del archivo fuente one\+Wire\+Sensor.\+c. 
+
+Manejo de sensor tipo One\+Wire. \begin{DoxyNote}{Note}
+Sensor utilizado Maxim ds18b20. Se considera al sensor conectado con una resistena de pullup de 4,7K. 
+
+Copyright 2018 -\/ Ing Matias Alvarez. 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Command\+\_\+t@{one\+Wire\+Sensor\+Command\+\_\+t}}
+\index{one\+Wire\+Sensor\+Command\+\_\+t@{one\+Wire\+Sensor\+Command\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Command\+\_\+t}{oneWireSensorCommand_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf one\+Wire\+Sensor\+Command\+\_\+t}}\hypertarget{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9b}{}\label{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9b}
+
+
+Comandos para el sensor One\+Wire ds18b20. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{C\+O\+N\+V\+E\+R\+T\+\_\+T@{C\+O\+N\+V\+E\+R\+T\+\_\+T}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!C\+O\+N\+V\+E\+R\+T\+\_\+T@{C\+O\+N\+V\+E\+R\+T\+\_\+T}}\item[{\em 
+C\+O\+N\+V\+E\+R\+T\+\_\+T\hypertarget{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9bab2b9438ba5166fb8ac017bdbb55d9646}{}\label{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9bab2b9438ba5166fb8ac017bdbb55d9646}
+}]Conversion de temperatura \index{S\+K\+I\+P\+\_\+\+R\+OM@{S\+K\+I\+P\+\_\+\+R\+OM}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+K\+I\+P\+\_\+\+R\+OM@{S\+K\+I\+P\+\_\+\+R\+OM}}\item[{\em 
+S\+K\+I\+P\+\_\+\+R\+OM\hypertarget{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9ba7aadade4e18aa3fa43671e04a0338d01}{}\label{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9ba7aadade4e18aa3fa43671e04a0338d01}
+}]Descarte de R\+OM \index{R\+E\+A\+D\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD@{R\+E\+A\+D\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!R\+E\+A\+D\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD@{R\+E\+A\+D\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD}}\item[{\em 
+R\+E\+A\+D\+\_\+\+S\+C\+R\+A\+T\+C\+H\+P\+AD\hypertarget{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9ba3b66d5a861d08cb8b32618183ca1d0a3}{}\label{oneWireSensor_8h_a7de86ca799d141e983a3563abee13d9ba3b66d5a861d08cb8b32618183ca1d0a3}
+}]Lectura de S\+C\+R\+A\+T\+C\+H\+P\+AD \end{description}
+\end{Desc}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Delay\+\_\+t@{one\+Wire\+Sensor\+Delay\+\_\+t}}
+\index{one\+Wire\+Sensor\+Delay\+\_\+t@{one\+Wire\+Sensor\+Delay\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Delay\+\_\+t}{oneWireSensorDelay_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf one\+Wire\+Sensor\+Delay\+\_\+t}}\hypertarget{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230}{}\label{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230}
+
+
+Delay de conversion de temperatura asociado a cada resolucion posible del sensor One\+Wire. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}}\item[{\em 
+N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY\hypertarget{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230aebaf4bef2614cb3a0007f055a670a366}{}\label{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230aebaf4bef2614cb3a0007f055a670a366}
+}]94ms de delay \index{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}}\item[{\em 
+T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY\hypertarget{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a94cd65c1d9a427e5dedda1516e8d5c94}{}\label{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a94cd65c1d9a427e5dedda1516e8d5c94}
+}]188ms de delay \index{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}}\item[{\em 
+E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY\hypertarget{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a452a30a49b4cf9287b39b11dde1e9e66}{}\label{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a452a30a49b4cf9287b39b11dde1e9e66}
+}]375ms de delay \index{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY}}\item[{\em 
+T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+D\+E\+L\+AY\hypertarget{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a635bd8fc117a8d7b536c97a83e06f6ed}{}\label{oneWireSensor_8h_acaf718ffd1ab165dc25d0afe96c28230a635bd8fc117a8d7b536c97a83e06f6ed}
+}]750ms de delay \end{description}
+\end{Desc}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Error\+\_\+t@{one\+Wire\+Sensor\+Error\+\_\+t}}
+\index{one\+Wire\+Sensor\+Error\+\_\+t@{one\+Wire\+Sensor\+Error\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Error\+\_\+t}{oneWireSensorError_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf one\+Wire\+Sensor\+Error\+\_\+t}}\hypertarget{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2a}{}\label{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2a}
+
+
+Estado funcionamiento del sensor One\+Wire. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG@{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG@{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG}}\item[{\em 
+O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG\hypertarget{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2aa19b4d4ca303b2e66472289559a8c39db}{}\label{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2aa19b4d4ca303b2e66472289559a8c39db}
+}]Sensor One\+Wire No Funcionando \index{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG@{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG@{O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG}}\item[{\em 
+O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG\hypertarget{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2aac68e5153b726f369607ba612813fb2b8}{}\label{oneWireSensor_8h_a66c3bb68b3b4cd16ef7861345e1a8a2aac68e5153b726f369607ba612813fb2b8}
+}]Sensor One\+Wire Funcionando \end{description}
+\end{Desc}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Mask\+\_\+t@{one\+Wire\+Sensor\+Mask\+\_\+t}}
+\index{one\+Wire\+Sensor\+Mask\+\_\+t@{one\+Wire\+Sensor\+Mask\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Mask\+\_\+t}{oneWireSensorMask_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf one\+Wire\+Sensor\+Mask\+\_\+t}}\hypertarget{oneWireSensor_8h_a27df67930140466ba44e0a26af70947e}{}\label{oneWireSensor_8h_a27df67930140466ba44e0a26af70947e}
+
+
+Mascara utilizada para calcular la temperatura asociada a cada resolucion posible del sensor One\+Wire. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}}\item[{\em 
+N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK\hypertarget{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea37466bd3c21416cc7caacd4dd604ebbf}{}\label{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea37466bd3c21416cc7caacd4dd604ebbf}
+}]Mascara 1000 \index{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}}\item[{\em 
+T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK\hypertarget{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea93208b33345d305bb5bf718e20efc99b}{}\label{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea93208b33345d305bb5bf718e20efc99b}
+}]Mascara 1100 \index{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}}\item[{\em 
+E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK\hypertarget{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea40b9016c0dbb27cd1eb077a34371be68}{}\label{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea40b9016c0dbb27cd1eb077a34371be68}
+}]Mascara 1110 \index{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK}}\item[{\em 
+T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+M\+A\+SK\hypertarget{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea06cab04f28a2f0bdafbccd3913c175b5}{}\label{oneWireSensor_8h_a27df67930140466ba44e0a26af70947ea06cab04f28a2f0bdafbccd3913c175b5}
+}]Mascara 1111 \end{description}
+\end{Desc}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Resolution\+\_\+t@{one\+Wire\+Sensor\+Resolution\+\_\+t}}
+\index{one\+Wire\+Sensor\+Resolution\+\_\+t@{one\+Wire\+Sensor\+Resolution\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Resolution\+\_\+t}{oneWireSensorResolution_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf one\+Wire\+Sensor\+Resolution\+\_\+t}}\hypertarget{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98}{}\label{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98}
+
+
+Resoluciones posbiles en bits del sensor One\+Wire. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}\item[{\em 
+N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON\hypertarget{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98a9a474dd8c718b426641a8b471d640cdc}{}\label{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98a9a474dd8c718b426641a8b471d640cdc}
+}]9 bits de resolucion \index{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}\item[{\em 
+T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON\hypertarget{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98aa7508704967fb24d5a63018c6f2ae85a}{}\label{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98aa7508704967fb24d5a63018c6f2ae85a}
+}]10 bits de resolucion \index{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}\item[{\em 
+E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON\hypertarget{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98a576d63794732dd5c03a2ad31033775db}{}\label{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98a576d63794732dd5c03a2ad31033775db}
+}]11 bits de resolucion \index{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON}}\item[{\em 
+T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+ON\hypertarget{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98aba59e167509e30c6015b0143b6aab714}{}\label{oneWireSensor_8h_af81233465a38dc28904e0bce0032aa98aba59e167509e30c6015b0143b6aab714}
+}]12 bits de resolucion \end{description}
+\end{Desc}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Resolution\+Step\+\_\+t@{one\+Wire\+Sensor\+Resolution\+Step\+\_\+t}}
+\index{one\+Wire\+Sensor\+Resolution\+Step\+\_\+t@{one\+Wire\+Sensor\+Resolution\+Step\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Resolution\+Step\+\_\+t}{oneWireSensorResolutionStep_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf one\+Wire\+Sensor\+Resolution\+Step\+\_\+t}}\hypertarget{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9}{}\label{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9}
+
+
+Resoluciones posbiles en grados centigrados(°C) del sensor One\+Wire. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}}\item[{\em 
+N\+I\+N\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP\hypertarget{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9a3c3e7d899a9b25096551efa1d62d126e}{}\label{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9a3c3e7d899a9b25096551efa1d62d126e}
+}]0.\+5°C de resolucion \index{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}}\item[{\em 
+T\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP\hypertarget{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9aa56e4c78ccd19c77711a92ccf159fde1}{}\label{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9aa56e4c78ccd19c77711a92ccf159fde1}
+}]0.\+25°C de resolucion \index{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}}\item[{\em 
+E\+L\+E\+V\+E\+N\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP\hypertarget{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9ad1f19f1b7197d2fcd39f074b5c2f0ba7}{}\label{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9ad1f19f1b7197d2fcd39f074b5c2f0ba7}
+}]0.\+125°C de resolucion \index{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP@{T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP}}\item[{\em 
+T\+W\+E\+L\+V\+E\+\_\+\+B\+I\+T\+S\+\_\+\+R\+E\+S\+O\+L\+U\+T\+I\+O\+N\+\_\+\+S\+T\+EP\hypertarget{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9a14d23f55d09576c038831b6f61753d7e}{}\label{oneWireSensor_8h_aa9fe1c5643bb256b955a7da4905f79f9a14d23f55d09576c038831b6f61753d7e}
+}]0.\+0625°C de resolucion \end{description}
+\end{Desc}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!scratchpad\+Byte\+\_\+t@{scratchpad\+Byte\+\_\+t}}
+\index{scratchpad\+Byte\+\_\+t@{scratchpad\+Byte\+\_\+t}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{scratchpad\+Byte\+\_\+t}{scratchpadByte_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf scratchpad\+Byte\+\_\+t}}\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62}
+
+
+Descripcion de cada byte del S\+C\+R\+A\+T\+C\+H\+P\+AD. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+SB@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+SB}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+SB@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+SB}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+L\+SB\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62afa2f5ed63d4b3ce65771b65e2d668a13}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62afa2f5ed63d4b3ce65771b65e2d668a13}
+}]L\+SB del valor de la temperatura \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+SB@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+SB}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+SB@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+SB}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+E\+M\+P\+E\+R\+A\+T\+U\+R\+E\+\_\+\+M\+SB\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a25ff9baae992188b61df23e661e9739e}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a25ff9baae992188b61df23e661e9739e}
+}]M\+SB del valor de la temperatura \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+H\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+H\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+H\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+H\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+H\+\_\+\+R\+E\+G\+I\+S\+T\+ER\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a8de85cf12df772e277932ee9e7ecae9c}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a8de85cf12df772e277932ee9e7ecae9c}
+}]Registro de alarma de temperatura alta \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+L\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+L\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+L\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+L\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+T\+L\+\_\+\+R\+E\+G\+I\+S\+T\+ER\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62ac6b78c505b983fa70dbd6ebd36e7c98b}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62ac6b78c505b983fa70dbd6ebd36e7c98b}
+}]Registro de alarma de temperatura baja \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+S\+T\+ER}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+S\+T\+ER@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+S\+T\+ER}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+O\+N\+F\+I\+G\+U\+R\+A\+T\+I\+O\+N\+\_\+\+R\+E\+G\+I\+S\+T\+ER\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a0107ed61deeb989b164a5c4ec89ecb08}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a0107ed61deeb989b164a5c4ec89ecb08}
+}]Registro de configuracion \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+1@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+1}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+1@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+1}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+1\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a2dc23a13aeee28b79754a398f502f218}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a2dc23a13aeee28b79754a398f502f218}
+}]Reservado 1 \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+2@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+2}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+2@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+2}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+2\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a7d43f265fefb3a67b383673d3cf231fb}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a7d43f265fefb3a67b383673d3cf231fb}
+}]Reservado 2 \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+3@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+3}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+3@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+3}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+R\+E\+S\+E\+R\+V\+E\+D\+\_\+3\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62aa8c21eed5709d0366cc7a6a5d46688e5}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62aa8c21eed5709d0366cc7a6a5d46688e5}
+}]Reservado 3 \index{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+R\+C\+\_\+\+B\+Y\+TE@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+R\+C\+\_\+\+B\+Y\+TE}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+R\+C\+\_\+\+B\+Y\+TE@{S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+R\+C\+\_\+\+B\+Y\+TE}}\item[{\em 
+S\+C\+R\+A\+T\+C\+H\+P\+A\+D\+\_\+\+C\+R\+C\+\_\+\+B\+Y\+TE\hypertarget{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a6941e09b5df1d1074ec4d92032bf7c76}{}\label{oneWireSensor_8h_a4111b9ed210072b9a6c2f663fa4d5e62a6941e09b5df1d1074ec4d92032bf7c76}
+}]C\+R\+C8 \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Fill\+Scratchpad@{one\+Wire\+Sensor\+Fill\+Scratchpad}}
+\index{one\+Wire\+Sensor\+Fill\+Scratchpad@{one\+Wire\+Sensor\+Fill\+Scratchpad}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Fill\+Scratchpad()}{oneWireSensorFillScratchpad()}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf one\+Wire\+Sensor\+Error\+\_\+t} one\+Wire\+Sensor\+Fill\+Scratchpad (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{oneWireSensor_8h_ae05cc03813f40654ef0cfb28e493b512}{}\label{oneWireSensor_8h_ae05cc03813f40654ef0cfb28e493b512}
+
+
+Carga del S\+C\+R\+A\+T\+C\+H\+P\+AD asociado al sensor a partir de los datos recibidos por parte del sensor. 
+
+\begin{DoxyReturn}{Returns}
+O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG si hubo un error en el llenado del scratchpad, O\+N\+E\+\_\+\+W\+I\+R\+E\+\_\+\+S\+E\+N\+S\+O\+R\+\_\+\+W\+O\+R\+K\+I\+NG caso contrario. 
+\end{DoxyReturn}
+current\+Byte \+: Byte leido en cada momento
+
+crc \+: Valor del calculo de C\+RC \index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Init@{one\+Wire\+Sensor\+Init}}
+\index{one\+Wire\+Sensor\+Init@{one\+Wire\+Sensor\+Init}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Init(one\+Wire\+Sensor\+Resolution\+\_\+t resolution, gpio\+Map\+\_\+t gpio)}{oneWireSensorInit(oneWireSensorResolution_t resolution, gpioMap_t gpio)}}]{\setlength{\rightskip}{0pt plus 5cm}void one\+Wire\+Sensor\+Init (
+\begin{DoxyParamCaption}
+\item[{{\bf one\+Wire\+Sensor\+Resolution\+\_\+t}}]{resolution, }
+\item[{gpio\+Map\+\_\+t}]{gpio}
+\end{DoxyParamCaption}
+)}\hypertarget{oneWireSensor_8h_a9be90d394a6b5ea24d36dc6172d1b23b}{}\label{oneWireSensor_8h_a9be90d394a6b5ea24d36dc6172d1b23b}
+
+
+Inicializacion de la estructura de datos del sensor one\+Wire. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resolution} & \+: Resolucion en bits a utilizar. \\
+\hline
+{\em gpio} & \+: G\+P\+IO asociado al bus de datos utilizado por el sensor. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Nada. 
+\end{DoxyReturn}
+\index{one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}!one\+Wire\+Sensor\+Read\+Temp\+Value@{one\+Wire\+Sensor\+Read\+Temp\+Value}}
+\index{one\+Wire\+Sensor\+Read\+Temp\+Value@{one\+Wire\+Sensor\+Read\+Temp\+Value}!one\+Wire\+Sensor.\+h@{one\+Wire\+Sensor.\+h}}
+\subsubsection[{\texorpdfstring{one\+Wire\+Sensor\+Read\+Temp\+Value()}{oneWireSensorReadTempValue()}}]{\setlength{\rightskip}{0pt plus 5cm}float one\+Wire\+Sensor\+Read\+Temp\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{oneWireSensor_8h_a47997a927d9398575c9608e23de1c088}{}\label{oneWireSensor_8h_a47997a927d9398575c9608e23de1c088}
+
+
+Calculo y lectura de la temperatura del scratchpad. 
+
+\begin{DoxyReturn}{Returns}
+Valor de la temperatura. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Utilizar despues de llenar el S\+C\+R\+A\+T\+C\+H\+P\+AD correctamente. 
+\end{DoxyNote}

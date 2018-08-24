@@ -1,0 +1,228 @@
+\hypertarget{gprs_8h}{}\section{inc/gprs.h File Reference}
+\label{gprs_8h}\index{inc/gprs.\+h@{inc/gprs.\+h}}
+
+
+Archivo de cabecera del archivo fuente gprs.\+c.  
+
+
+{\ttfamily \#include \char`\"{}sapi.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$string.\+h$>$}\\*
+Include dependency graph for gprs.\+h\+:
+% FIG 0
+\subsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \hyperlink{structgprs__t}{gprs\+\_\+t}
+\begin{DoxyCompactList}\small\item\em Estructura de datos del modulo G\+P\+RS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \hyperlink{gprs_8h_ad1845ce2b7d06c54e693b0481c623728}{char\+To\+Int}(c)~(uint8\+\_\+t)(c-\/\textquotesingle{}0\textquotesingle{})
+\begin{DoxyCompactList}\small\item\em Conversion de caracter a digito. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_a2baf278ff928c027b9e10a63dbc4f12f}{G\+P\+R\+S\+\_\+\+D\+E\+L\+AY}~5000\hypertarget{gprs_8h_a2baf278ff928c027b9e10a63dbc4f12f}{}\label{gprs_8h_a2baf278ff928c027b9e10a63dbc4f12f}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de tiempo en milisegundos que se espera la respuesta por parte del modulo G\+P\+RS. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_a05de7cce22260a285ed0ccc3af210189}{M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM}~109
+\begin{DoxyCompactList}\small\item\em Menor Valor posible de la señal del modulo G\+P\+RS. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_ad37a804df2a1060b453ce07fe0ee3cbc}{AT}~\char`\"{}A\+T\textbackslash{}r\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando AT del modulo G\+P\+RS S\+I\+M900. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_a4eec89491776eef85fa2bccf7cbaa858}{A\+T\+C\+M\+GS}~\char`\"{}AT+C\+M\+GS=\textbackslash{}\char`\"{}\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+M\+GS del modulo G\+P\+RS S\+I\+M900. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_a9b23356d02c82702ed00fa920acba7d3}{A\+T\+C\+M\+GF}~\char`\"{}AT+C\+M\+GF=1\textbackslash{}r\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+M\+GF del modulo G\+P\+RS S\+I\+M900. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_ac366c7430a84ba26d3a22255d0ceca46}{A\+T\+C\+SQ}~\char`\"{}AT+C\+S\+Q\textbackslash{}r\textbackslash{}n\char`\"{}
+\begin{DoxyCompactList}\small\item\em Comando A\+T+\+C\+SQ del modulo G\+P\+RS S\+I\+M900. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_adad00a9188b8603e5d4757fa9f4599ba}{G\+P\+R\+S\+\_\+\+E\+N\+D\+\_\+\+O\+F\+\_\+\+S\+MS}~0x1A\hypertarget{gprs_8h_adad00a9188b8603e5d4757fa9f4599ba}{}\label{gprs_8h_adad00a9188b8603e5d4757fa9f4599ba}
+
+\begin{DoxyCompactList}\small\item\em Delimitador de fin de S\+MS del modulo G\+P\+RS S\+I\+M900. \end{DoxyCompactList}\item 
+\#define \hyperlink{gprs_8h_ad15d1691bb7dd8541f8f14974e5a94c6}{R\+E\+S\+P\+O\+N\+S\+E\+\_\+\+T\+O\+\_\+\+W\+A\+I\+T\+\_\+\+L\+E\+N\+G\+TH}~15\hypertarget{gprs_8h_ad15d1691bb7dd8541f8f14974e5a94c6}{}\label{gprs_8h_ad15d1691bb7dd8541f8f14974e5a94c6}
+
+\begin{DoxyCompactList}\small\item\em Maxima cantidad de caracteres de la respuesta que se espera por parte del modulo G\+P\+RS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{gprs_8h_a69babc076099b76608116bebcc6af1af}{gprs\+Error\+\_\+t} \{ \hyperlink{gprs_8h_a69babc076099b76608116bebcc6af1afa479785e0b27f0671bc169d519454c0c0}{G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG} = 0, 
+\hyperlink{gprs_8h_a69babc076099b76608116bebcc6af1afa6e1dbe82d154f51765206079a7821896}{G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG} = 1
+ \}\begin{DoxyCompactList}\small\item\em Definicion de los estados posibles de funcioamiento del G\+P\+RS. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{gprs_8h_a69babc076099b76608116bebcc6af1af}{gprs\+Error\+\_\+t} \hyperlink{gprs_8h_ac3ee9d6e79fd09239b5feafa45c86c0f}{gprs\+Init} (uart\+Map\+\_\+t gprs\+Uart)
+\begin{DoxyCompactList}\small\item\em Inicializacion del modulo G\+P\+RS. \end{DoxyCompactList}\item 
+\hyperlink{gprs_8h_a69babc076099b76608116bebcc6af1af}{gprs\+Error\+\_\+t} \hyperlink{gprs_8h_a5e087724738efeb7eefabae16c77ea3f}{gprs\+Send\+S\+MS} (char $\ast$sms, char $\ast$cell\+Number)
+\begin{DoxyCompactList}\small\item\em Envio de S\+MS a traves del modulo G\+P\+RS. \end{DoxyCompactList}\item 
+uint8\+\_\+t \hyperlink{gprs_8h_a1ea2b511879b90cb9b7f100c2705c157}{gprs\+Get\+Signal} ()
+\begin{DoxyCompactList}\small\item\em Obtencion de la señal del modulo G\+P\+RS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Archivo de cabecera del archivo fuente gprs.\+c. 
+
+Manejo del modulo gprs S\+I\+M900 \begin{DoxyNote}{Note}
+Copyright 2018 -\/ Ing Matias Alvarez. 
+\end{DoxyNote}
+
+
+\subsection{Macro Definition Documentation}
+\index{gprs.\+h@{gprs.\+h}!AT@{AT}}
+\index{AT@{AT}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{AT}{AT}}]{\setlength{\rightskip}{0pt plus 5cm}\#define AT~\char`\"{}A\+T\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{gprs_8h_ad37a804df2a1060b453ce07fe0ee3cbc}{}\label{gprs_8h_ad37a804df2a1060b453ce07fe0ee3cbc}
+
+
+Comando AT del modulo G\+P\+RS S\+I\+M900. 
+
+Utilizado para ver que el modulo este correctamete conectado. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{gprs.\+h@{gprs.\+h}!A\+T\+C\+M\+GF@{A\+T\+C\+M\+GF}}
+\index{A\+T\+C\+M\+GF@{A\+T\+C\+M\+GF}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+M\+GF}{ATCMGF}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+M\+GF~\char`\"{}AT+C\+M\+GF=1\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{gprs_8h_a9b23356d02c82702ed00fa920acba7d3}{}\label{gprs_8h_a9b23356d02c82702ed00fa920acba7d3}
+
+
+Comando A\+T+\+C\+M\+GF del modulo G\+P\+RS S\+I\+M900. 
+
+Utilizado para setear el modo de texto. \begin{DoxyNote}{Note}
+El modo de texto debe ser S\+I\+E\+M\+P\+RE seteado antes de enviar un S\+MS. 
+
+Respuesta esperada \+: \textquotesingle{}OK\textquotesingle{}. 
+\end{DoxyNote}
+\index{gprs.\+h@{gprs.\+h}!A\+T\+C\+M\+GS@{A\+T\+C\+M\+GS}}
+\index{A\+T\+C\+M\+GS@{A\+T\+C\+M\+GS}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+M\+GS}{ATCMGS}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+M\+GS~\char`\"{}AT+C\+M\+GS=\textbackslash{}\char`\"{}\char`\"{}}\hypertarget{gprs_8h_a4eec89491776eef85fa2bccf7cbaa858}{}\label{gprs_8h_a4eec89491776eef85fa2bccf7cbaa858}
+
+
+Comando A\+T+\+C\+M\+GS del modulo G\+P\+RS S\+I\+M900. 
+
+Utilizado para enviar S\+MS a traves del modulo G\+P\+RS. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}\textquotesingle{}$>$\textquotesingle{}\textquotesingle{} Para enviar el S\+MS y \textquotesingle{}OK\textquotesingle{} luego de enviado. 
+\end{DoxyNote}
+\index{gprs.\+h@{gprs.\+h}!A\+T\+C\+SQ@{A\+T\+C\+SQ}}
+\index{A\+T\+C\+SQ@{A\+T\+C\+SQ}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{A\+T\+C\+SQ}{ATCSQ}}]{\setlength{\rightskip}{0pt plus 5cm}\#define A\+T\+C\+SQ~\char`\"{}AT+C\+S\+Q\textbackslash{}r\textbackslash{}n\char`\"{}}\hypertarget{gprs_8h_ac366c7430a84ba26d3a22255d0ceca46}{}\label{gprs_8h_ac366c7430a84ba26d3a22255d0ceca46}
+
+
+Comando A\+T+\+C\+SQ del modulo G\+P\+RS S\+I\+M900. 
+
+Utilizado para obtener la señal del modulo G\+P\+RS. \begin{DoxyNote}{Note}
+Respuesta esperada \+: \textquotesingle{}\+:\textquotesingle{}\textquotesingle{} y \textquotesingle{},\textquotesingle{}. Entre ambas respuestas el modulo envia el valor de la señal. 
+\end{DoxyNote}
+\index{gprs.\+h@{gprs.\+h}!char\+To\+Int@{char\+To\+Int}}
+\index{char\+To\+Int@{char\+To\+Int}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{char\+To\+Int}{charToInt}}]{\setlength{\rightskip}{0pt plus 5cm}\#define char\+To\+Int(
+\begin{DoxyParamCaption}
+\item[{}]{c}
+\end{DoxyParamCaption}
+)~(uint8\+\_\+t)(c-\/\textquotesingle{}0\textquotesingle{})}\hypertarget{gprs_8h_ad1845ce2b7d06c54e693b0481c623728}{}\label{gprs_8h_ad1845ce2b7d06c54e693b0481c623728}
+
+
+Conversion de caracter a digito. 
+
+\begin{DoxyNote}{Note}
+Se espera que el caracter sea un numero del 0 al 9. 
+\end{DoxyNote}
+\index{gprs.\+h@{gprs.\+h}!M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM@{M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM}}
+\index{M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM@{M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM}{MIN_SIGNAL_IN_DBM}}]{\setlength{\rightskip}{0pt plus 5cm}\#define M\+I\+N\+\_\+\+S\+I\+G\+N\+A\+L\+\_\+\+I\+N\+\_\+\+D\+BM~109}\hypertarget{gprs_8h_a05de7cce22260a285ed0ccc3af210189}{}\label{gprs_8h_a05de7cce22260a285ed0ccc3af210189}
+
+
+Menor Valor posible de la señal del modulo G\+P\+RS. 
+
+\begin{DoxyNote}{Note}
+Esta definido como un valor positivo, pero en realidad es un valor negativo. 
+\end{DoxyNote}
+
+
+\subsection{Enumeration Type Documentation}
+\index{gprs.\+h@{gprs.\+h}!gprs\+Error\+\_\+t@{gprs\+Error\+\_\+t}}
+\index{gprs\+Error\+\_\+t@{gprs\+Error\+\_\+t}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{gprs\+Error\+\_\+t}{gprsError_t}}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf gprs\+Error\+\_\+t}}\hypertarget{gprs_8h_a69babc076099b76608116bebcc6af1af}{}\label{gprs_8h_a69babc076099b76608116bebcc6af1af}
+
+
+Definicion de los estados posibles de funcioamiento del G\+P\+RS. 
+
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG@{G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG}!gprs.\+h@{gprs.\+h}}\index{gprs.\+h@{gprs.\+h}!G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG@{G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG}}\item[{\em 
+G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG\hypertarget{gprs_8h_a69babc076099b76608116bebcc6af1afa479785e0b27f0671bc169d519454c0c0}{}\label{gprs_8h_a69babc076099b76608116bebcc6af1afa479785e0b27f0671bc169d519454c0c0}
+}]G\+P\+RS No Funcionando \index{G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG@{G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG}!gprs.\+h@{gprs.\+h}}\index{gprs.\+h@{gprs.\+h}!G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG@{G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG}}\item[{\em 
+G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG\hypertarget{gprs_8h_a69babc076099b76608116bebcc6af1afa6e1dbe82d154f51765206079a7821896}{}\label{gprs_8h_a69babc076099b76608116bebcc6af1afa6e1dbe82d154f51765206079a7821896}
+}]G\+P\+RS Funcionando \end{description}
+\end{Desc}
+
+
+\subsection{Function Documentation}
+\index{gprs.\+h@{gprs.\+h}!gprs\+Get\+Signal@{gprs\+Get\+Signal}}
+\index{gprs\+Get\+Signal@{gprs\+Get\+Signal}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{gprs\+Get\+Signal()}{gprsGetSignal()}}]{\setlength{\rightskip}{0pt plus 5cm}uint8\+\_\+t gprs\+Get\+Signal (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\hypertarget{gprs_8h_a1ea2b511879b90cb9b7f100c2705c157}{}\label{gprs_8h_a1ea2b511879b90cb9b7f100c2705c157}
+
+
+Obtencion de la señal del modulo G\+P\+RS. 
+
+\begin{DoxyReturn}{Returns}
+Valor de la señal en dbm. 
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+El valor devuelto es positivo cuando en realidad deberia ser negativo. Agregar el signo al trabajar con el valor. 
+
+Interactua con el hardware 
+
+Getter. 
+
+2 -\/109dbm Marginal 3 -\/107dbm Marginal 4 -\/105dbm Marginal 5 -\/103dbm Marginal 6 -\/101dbm Marginal 7 -\/99dbm Marginal 8 -\/97dbm Marginal 9 -\/95dbm Marginal 10 -\/93dbm OK 11 -\/91dbm OK 12 -\/89dbm OK 13 -\/87dbm OK 14 -\/85dbm OK 15 -\/83dbm Good 16 -\/81dbm Good 17 -\/79dbm Good 18 -\/77dbm Good 19 -\/75dbm Good 20 -\/73dbm Excellent 21 -\/71dbm Excellent 22 -\/69dbm Excellent 23 -\/67dbm Excellent 24 -\/65dbm Excellent 25 -\/63dbm Excellent 26 -\/61dbm Excellent 27 -\/59dbm Excellent 28 -\/57dbm Excellent 29 -\/55dbm Excellent 30 -\/53dbm Excellent 
+\end{DoxyNote}
+gprs\+Delay \+: Tiempo de espera de la respuesta por parte del modulo G\+P\+RS
+
+signal \+: Valor de señal recibido
+
+byte\+Received \+: Byte recibido
+
+pow \+: Multiplicador del caracter del valor de señal recibido en cada instante
+
+error \+: Estado de funcionamiento del modulo G\+P\+RS \index{gprs.\+h@{gprs.\+h}!gprs\+Init@{gprs\+Init}}
+\index{gprs\+Init@{gprs\+Init}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{gprs\+Init(uart\+Map\+\_\+t gprs\+Uart)}{gprsInit(uartMap_t gprsUart)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gprs\+Error\+\_\+t} gprs\+Init (
+\begin{DoxyParamCaption}
+\item[{uart\+Map\+\_\+t}]{gprs\+Uart}
+\end{DoxyParamCaption}
+)}\hypertarget{gprs_8h_ac3ee9d6e79fd09239b5feafa45c86c0f}{}\label{gprs_8h_ac3ee9d6e79fd09239b5feafa45c86c0f}
+
+
+Inicializacion del modulo G\+P\+RS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em gprs\+Uart} & \+: U\+A\+RT a setear en la estructura de datos del modulo G\+P\+RS para enviar los comandos. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG si no fue posible configurar el G\+P\+RS, G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG caso contrario. 
+\end{DoxyReturn}
+\index{gprs.\+h@{gprs.\+h}!gprs\+Send\+S\+MS@{gprs\+Send\+S\+MS}}
+\index{gprs\+Send\+S\+MS@{gprs\+Send\+S\+MS}!gprs.\+h@{gprs.\+h}}
+\subsubsection[{\texorpdfstring{gprs\+Send\+S\+M\+S(char $\ast$sms, char $\ast$cell\+Number)}{gprsSendSMS(char *sms, char *cellNumber)}}]{\setlength{\rightskip}{0pt plus 5cm}{\bf gprs\+Error\+\_\+t} gprs\+Send\+S\+MS (
+\begin{DoxyParamCaption}
+\item[{char $\ast$}]{sms, }
+\item[{char $\ast$}]{cell\+Number}
+\end{DoxyParamCaption}
+)}\hypertarget{gprs_8h_a5e087724738efeb7eefabae16c77ea3f}{}\label{gprs_8h_a5e087724738efeb7eefabae16c77ea3f}
+
+
+Envio de S\+MS a traves del modulo G\+P\+RS. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em S\+MS} & \+: Puntero al buffer que almacena el mensaje a enviar. \\
+\hline
+{\em cell\+Number} & \+: Puntero al buffer que contiene el numero de celular al cual enviar el sms. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+G\+P\+R\+S\+\_\+\+W\+O\+R\+K\+I\+NG si el sms se envio correctamente, G\+P\+R\+S\+\_\+\+N\+O\+T\+\_\+\+W\+O\+R\+K\+I\+NG caso contrario. 
+\end{DoxyReturn}
+error \+: Estado de funcionamiento del modulo G\+P\+RS 

@@ -1,0 +1,26 @@
+\subsection*{Compilación}
+
+Recordar compilar con \char`\"{}make\char`\"{} desde adentro esta misma carpeta.
+
+De manera similar al \char`\"{}\+Makefile.\+mine\char`\"{} del C\+I\+AA Firmware tenemos el archivo \char`\"{}project.\+mk\char`\"{} que permite seleccionar el proyecto y placa objetivo a compilar.
+
+\subsection*{Utilización}
+
+Este ejemplo escribe un archivo de texto en una tarjeta SD card mediante S\+PI.
+
+Funciona sobre la E\+D\+U-\/\+C\+I\+A\+A-\/\+N\+XP. El conexionado utilizando el lector de SD es\+:
+
+S\+D/\+Micro\+SD Card Reader --$>$ E\+D\+U-\/\+C\+I\+A\+A-\/\+N\+XP \begin{DoxyVerb}                 + --> +3.3V
+                CS --> GPIO0
+                DI --> SPI_MOSI
+               CLK --> SPI_SCK
+                DO --> SPI_MISO
+                 G --> GND
+\end{DoxyVerb}
+
+
+Utiliza el modulo Fat\+Fs (\href{http://elm-chan.org/fsw/ff/00index_e.html}{\tt http\+://elm-\/chan.\+org/fsw/ff/00index\+\_\+e.\+html}) y las funciones de la A\+PI para S\+SP de L\+P\+C\+Open (\href{https://www.lpcware.com/lpcopen}{\tt https\+://www.\+lpcware.\+com/lpcopen}).
+
+Se debe conectar la SD antes de correr el ejemplo, si prende el L\+E\+DG significa que pudo grabar el archivo correctamente en la tarjeta SD.
+
+No se encuentran implementados aun\+: File\+Read, timestamp, debug messages, etc. 
