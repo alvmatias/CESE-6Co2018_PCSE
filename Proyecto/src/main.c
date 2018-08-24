@@ -22,13 +22,13 @@
 * @def NETWORK
 * @brief Nombre de la red a la cual se conecta el modulo Wifi.
 */
-#define NETWORK     "FT_SANCHEZ"  //"INVITADOS-CADIEEL"
+#define NETWORK     "INVITADOS-CADIEEL"
 
 /**
 * @def PASSWORD
 * @brief Contraseña de la red a la cual se conecta el modulo Wifi.
 */
-#define PASSWORD    "01414484115"  //"CORDOBA9504"
+#define PASSWORD    "CORDOBA9504"
 
 /**
 * @def UBIDOTS
