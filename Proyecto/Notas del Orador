@@ -1,0 +1,37 @@
+Inicializacion: Todas las transacciones en el bus one wire arrancan con la secuencia de inicializacion, la cual consiste de un pulso de reset por parte del maestro seguido de un pulso de “presencia” del esclavo. Este pulso permite al maestro saber que el sensor esta listo para operar.
+
+Comando ROM: Search ROM, Read ROM, Match ROM, Skip ROM, Alarm Search
+
+Comando Función ds18b20: Convert T, Write Scratchpad, Read Scratchpad, Copy Scratchpad, Recall E2, Read Power Suply.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+El maestro transmite el pulso de reset al setear el bus en bajo durante 480us, Luego, el master libera el bus, que pasa a alto producto del pull-up. Cuando el sensor detecta el pulso de reset espera de 15us a 60us para transmitir el pulso de presencia, lo cual hace al setear el bus en bajo de 60us a 240us.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+Todos los slots de escritura deben ser de 60us minimo con 1us de recuperacion entre slots sucesivos. 
+Ambos tipos de slots de escritura comienzan con el master seteando el bus en bajo. 
+Para transmitir un 1, el master libera el bus a los 15us, pasando a alto. 
+Para transmitir un 0, el master mantiene en bajo el bus al menos 60us.
+El sensor muestrea el bus durante una ventana que va de los 15us a los 60us despues de que el master setea el bus en bajo. Si durante el muestreo el bus esta en alto, el sensor lee un 1, si esta en bajo lee un 0.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+El sensor solo puede transmitir data cuando el maestro se lo solicita. Por lo tanto el maestro debe generar los slots de lectura inmediatamente despues de escribir algun comando de lectura(Read Scratchpad por ejemplo). 
+Todos los slots de lectura deben ser de al menos 60us con 1us de recuperacion entre slots sucesivos.
+Un slot de lectura comienza con el master llevando el bus a bajo por al menos 1us y luego liberandolo. 
+Luego el sensor transmite un 1 al dejar el bus liberado o un 0 al llevar el bus a un nivel bajo.
+Todos los bits que transmite el sensor son validos hasta 15 us despues del pulso que inicio el slot de lectura. Por lo tanto, el master debe liberar el bus luego de iniciar el slot de lectura y muestrear el bus en menos de 15us.
+
+------------------------------------------------------------------------------------------------------------------------------------
+
+5 primeros bits solamente de signo
+Bits 4 a 10 (7 bits) parte entera
+Bits 0 a 3 (4 bits) parte decimal
+Bit 3 -> 9 bits
+Bits 3 y 4 -> 10 bits
+Bits 3, 4 y 5 -> 11 bits
+Bits 3, 4, 5 y 6 -> 12 bits
+
+
